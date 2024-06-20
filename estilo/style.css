@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NL:wght@100..400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playwrite+NL:wght@100..400&display=swap');
+
+
+:root {
+    --fonte1: verdana, Geneva, tahoma, sans-serif;
+    --fonte2:"Josefin Sans", sans-serif; 
+    --fonte3:"Playwrite NL", cursive; 
+
+}
+
+
+* {
+    margin: 0PX;
+    padding:  0px;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: rgb(99, 78, 5);
+    font-family: var(--fonte3);
+   
+}
+
+header{
+    background-color: black;
+    color: rgb(190, 113, 12);
+    text-align: center;
+}
+
+header > h1{
+   padding-top: 30px;
+   font-variant:small-caps;
+
+}
+
+
+header > p {
+    padding-bottom: 50px;
+
+}
+
+header a, footer a {
+    color: rgb(143, 31, 41);
+    text-decoration:none;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-size: 1.5em;
+}   
+
+section > p {
+    padding-bottom: 1em;
+}
+
+section.normal {
+    background-color: rgb(180, 114, 97);
+    color: aliceblue;
+    font-size: 2,5em;
+} 
+
+
+ section.imagem { 
+    background-color: rgb(172, 64, 25);
+    color: aliceblue;
+    box-shadow:  inset 7px 7px 13px 0px black;
+    background-attachment: fixed;
+}
+
+ section.imagem >p {
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(2, 1, 0, 0.404);
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.37);
+}
+
+
+ section#img01 {
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+    background-size: cover;
+    }
+
+
+  section#img02 {
+        background-image: url(../imagens/background002.jpg);
+        background-position: right center;
+        background-size: cover;
+    }
+
+
+  footer {
+        background-color: rgb(179, 127, 60);
+        color: rgb(65, 12, 12);
+        text-align: center;
+        padding: 15px;
+    }
+
